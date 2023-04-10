@@ -1,0 +1,10 @@
+version: "3"
+services:
+  subweb:
+    image: subweb-local:latest
+    container_name: subweb
+    restart: always
+    network_mode: bridge
+    hostname: subweb
+    ports:
+      - 58080:80
